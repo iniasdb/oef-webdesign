@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toets 6INF OKT 2020</title>
+    <link href="styleJS.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="header">
+            Toets Webdesign - 6INF - Positioneren
+        </div>
+        <div class="content">
+            <div class="leftWindow">
+                <div class="yellow"></div>
+                <div class="red"></div>
+                <div class="blue"></div>
+                <p id="title"></p>
+            </div>
+            <div class="windowContainer">
+                <div class="window">
+                    <button onclick="colorSwap()">Swap colors</button>
+                </div>
+                <div class="window">
+                    <button id="footerShow" onclick="showFooter()">Show footer</button>
+                </div>
+                <div class="window">
+                    <button onclick="changeFooter()">Change footer</button>
+                </div>
+                <div class="window">
+                    <button onclick="addTitle()">Add title</button>
+                </div>
+                <div class="window">
+                    <button onclick="reset()">Reset</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        (c) Inias De Belder - toets webdesign 6INF - okt 2020
+    </div>
+
+    <script>
+        let x = 0
+
+        function colorSwap() {
+            /*let color = prompt("welke achtergrond kleur? (engels)");
+            let titleColor = prompt("welke font kleur? (engels)");*/
+            document.querySelector('.leftWindow').style.backgroundColor = 'red';
+            document.querySelector('.blue').style.backgroundColor = 'purple';
+            document.querySelector('.yellow').style.backgroundColor = 'green';
+            document.querySelector('.red').style.backgroundColor = 'pink';
+            document.querySelector('#title').style.color = 'orange';
+
+        }
+
+        function showFooter() {
+            if (x === 0) {
+                document.querySelector('.footer').style.visibility = 'visible';
+                document.querySelector('#footerShow').innerHTML = 'Hide footer';
+                x = 1;
+            } else {
+                document.querySelector('.footer').style.visibility = 'hidden';
+                document.querySelector('#footerShow').innerHTML = 'Show footer';
+                x = 0;
+            }
+        }
+
+        function changeFooter() {
+            let text = prompt("footer text?");
+            document.querySelector('.footer').innerHTML = text;
+        }
+
+        function addTitle() {
+            let title = prompt("titel van kunstwerk");
+            document.querySelector('#title').innerHTML = title;
+            document.querySelector('#title').style.visibility = 'visible';
+        }
+
+        function reset() {
+            document.querySelector('.leftWindow').style.backgroundColor = 'white';
+            document.querySelector('.blue').style.backgroundColor = 'blue';
+            document.querySelector('.yellow').style.backgroundColor = 'yellow';
+            document.querySelector('.red').style.backgroundColor = 'red';
+
+            document.querySelector('.footer').style.visibility = 'hidden';
+
+            document.querySelector('.footer').innerHTML = '(c) Inias De Belder - toets webdesign 6INF - okt 2020';
+            document.querySelector('#footerShow').innerHTML = 'Show footer';
+            x = 0;
+
+            document.querySelector('#title').innerHTML = '';
+            document.querySelector('#title').style.visibility = 'hidden';
+        }
+    </script>
+
+</body>
+
+</html>

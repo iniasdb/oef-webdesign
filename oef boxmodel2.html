@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.container {
+background-color: blue;
+width: 800px;
+margin: 0 auto;
+padding-top: 5px;
+padding-bottom: 2px;
+}
+
+.header {
+background-color: green;
+margin-left: 5px;
+width: 790px;
+height: 150px;
+}
+
+.titel {
+background-color: yellow;
+width: 250px;
+}
+
+.nav-top {
+background-color: yellow;
+width: 790px;
+margin-left: 5px;
+}
+
+.nav-top ul {
+margin: 5px;
+list-style: none;
+padding-left: 0px;
+overflow: hidden;
+}
+
+.nav-top ul li {
+display: inline-block;
+}
+
+.nav-top ul li a {
+display: block;
+padding: 10px 0;
+margin-left: 55px;
+text-decoration: none;
+width: 80px;
+text-align: center;
+}
+
+.nav-top ul li a:hover {
+background-color: orange;
+}
+
+.nav-top li ul {
+display: none;
+background-color: yellow;
+text-decoration: none;
+}
+
+.nav-top li:hover ul {
+position: absolute;
+width: 70px;
+padding: 5px;
+display: block;
+}
+
+.nav-left {
+background-color: yellow;
+margin: 0 5px;
+width: 120px;
+float: left;
+}
+
+.nav-left ul {
+list-style: none;
+padding: 10px;
+}
+
+.nav-left ul li {
+text-decoration: none;
+padding-top: 0px;
+}
+
+.nav-left ul li a {
+display: block;
+width: 80px;
+}
+
+.content {
+background-color: white;
+width: 665px;
+height: 350px;
+float: left;
+margin-bottom: 5px;
+}
+
+.footer {
+clear: both;
+background-color: red;
+margin: 5px;
+}
+
+</style>
+</head>
+<body>
+body
+<div class="container">
+	<div class="header">
+		<div class="titel">
+			titel
+		</div>
+	</div>
+	<div class="nav-top">
+		<ul>
+			<li class="main"><a href="man">maandag</a></li>
+			<li class="main"><a href="din">dinsdag</a></li>
+			<li class="main"><a href="woe">woensdag</a>
+				<ul class="nav2">
+					<li>morgend</li><br>
+					<li>middag</li><br>
+					<li>avond</li><br>
+				</ul></li>
+			<li class="main"><a href="don">donderdag</a></li>
+			<li class="main"><a href="vrij">vrijdag</a></li>
+		</ul>
+	</div>
+	<div class="nav-left">
+		<ul>
+			<li><a href="man">maandag</a></li>
+			<li><a href="din">dinsdag</a></li>
+			<li><a href="woe">woensdag</a></li>
+			<li><a href="don">donderdag</a></li>
+			<li><a href="vrij">vrijdag</a></li>
+		</ul>
+	</div>
+	<div class="content">
+		content
+	</div>
+	<div class="footer">
+		footer
+	</div>	
+</div>
+	
+</body>
+</html>

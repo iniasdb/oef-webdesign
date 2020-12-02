@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                background-color: #134FE6;
+            }
+
+            h1 {
+                text-decoration: underline yellow;
+                color: white;
+                text-align: center;
+                font-family: Source Sans Pro, Helvetica Neue;
+            }
+            
+            .box {
+                background-color: white;
+                margin-left: 25%;
+                margin-right: 25%;
+                padding-top: 0.1em;
+                padding-left: 1em;
+                padding-right: 1em;
+                padding-bottom: 1em;
+                font-size: large;
+            }
+
+            form p {
+                font-size: small;
+                color: gray;
+            }
+
+            .button {
+                background-color: yellow;
+                height: 5em;
+                width: 100%
+            }
+
+            .nicknaam {
+                height: 3em;
+                background-color: #EEEEEE;
+                border: none;
+            }
+
+            .nicknaam:active {
+                background-color: white;
+                border: black solid 1px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>WAT IS JE NICKNAME?</h1><br>
+        <div class="box">
+            <p>This is the name your definitions will appear under when they're published on Urban Dictionary.</p>
+            <form>
+                <p>Je pseudoniem</p>
+                <input class="nicknaam" type="text" name="nick" size="100">
+            </form>
+            <p>Je pseudoniem wordt online getoond. <strong>Gebruik niet je echte naam.</strong></p>
+            <p>If you've already written definitions and you want to use your old handle, <a href="https://google.com" target="_blank">click here!</a></p>
+            <br>
+            <input class="button" type="button" name="save" type="submit" value="Save">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,133 @@
+body {
+  background-color: palegoldenrod;
+}
+
+.container {
+  background-color: lightgray;
+  width: 1000px;
+  margin: 0 auto;
+  padding: 10px;
+  overflow: hidden;
+  box-shadow: 5px 5px 10px #000000;
+}
+
+.container .header {
+  background-color: white;
+  width: 960px;
+  font-size: 40px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: inset 2px 2px 5px #000000;
+}
+
+.content {
+  margin-top: 10px;
+}
+
+.container .leftWindow {
+  width: 450px;
+  background-color: white;
+  box-shadow: inset 2px 2px 5px #000000;
+  float: left;
+}
+
+.yellow {
+  background-color: yellow;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 100px;
+  left: 80px;
+  z-index: 1;
+}
+
+.red {
+  background-color: red;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: 50px;
+  left: 55px;
+  z-index: 2;
+}
+
+.blue {
+  background-color: blue;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  position: relative;
+  top: -150px;
+  left: 150px;
+  z-index: 0;
+}
+
+.leftWindow p {
+  text-align: center;
+  font-size: 25px;
+  margin: 0;
+  position: relative;
+  bottom: 80px;
+  visibility: hidden;
+}
+
+.windowContainer {
+  float: left;
+  margin-left: 5px;
+  width: 545px;
+}
+
+.window {
+  background-color: white;
+  width: 132px;
+  height: 120px;
+  margin: 2px;
+  /*float: right;*/
+  float: left;
+  box-shadow: inset 2px 2px 5px #000000;
+}
+
+.window button {
+  width: 80px;
+  margin: 0 auto;
+  position: relative;
+  top: 80px;
+  left: 15px;
+}
+
+.window:nth-child(2) {
+  position: relative;
+  top: 110px;
+}
+
+.window:nth-child(3) {
+  position: relative;
+  top: 170px;
+}
+
+.window:nth-child(4) {
+  position: relative;
+  top: 230px;
+}
+
+.window:nth-child(5) {
+  position: relative;
+  top: 180px;
+  float: right;
+}
+
+.window:first-child {
+  float: right;
+}
+
+.footer {
+  margin-top: 10px;
+  margin: 10px auto;
+  width: 1000px;
+  background-color: lightgray;
+  box-shadow: 5px 5px 10px black;
+  text-align: center;
+  visibility: hidden;
+}

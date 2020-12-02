@@ -1,0 +1,176 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<title>website</title>
+		<link ref="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<style>
+		body {
+		background-image: url(images/ui.jpg);
+		background-repeat: repeat-y;
+		color: #00066;
+		}
+		
+		#main {
+		border: 2px solid red;
+		}
+
+		table.table2 {
+		border: 1px solid purple;
+		}
+
+		tr#row1 td:first-child{
+		background-color: yellow;
+		padding: 5;
+		font-type: courier new;	
+		}
+
+		#td1 {
+		background-image:url(images/bloem.png);
+		}
+
+		#td2 {
+		image:url(images/bloem.png);
+		align: top right;
+		}
+
+		#td3 {
+		align: top;
+		}
+
+		#td3:first-letter {
+		color: green;
+		}
+		
+		#td3:first-line {
+		color: red;
+		font-variant: small-caps;	
+ 		}
+
+		.rowsp {
+		background-color: pink;
+		border-left: 5px solid blue;
+		border-top: 5px solid green;
+		border-right: 5px dashed orange;
+		border-bottom: 5px dotted green;
+		}
+
+		span {
+		color: darkgreen;
+		font-weight: bold;	
+		font-size: 90%;
+		vertical-align: top;
+		}
+
+		a {
+		color: black;
+		}
+
+		ul {
+		list-style: none;
+		}
+
+		table #form {
+		border-style: dotted;
+		background-color:#90ee90;
+		}
+
+		table .class {
+		background-color: green;
+		}
+
+		#li1 {
+		color: red;
+		}	
+
+		</style>
+		<p align="center">De Body heeft een achtergrondafbeelding (ui.jpg) die enkel verticaal herhaald wordt. Alle tekst binnen de body heeft kleur #00066.<br> <strong>Deze tekst staat binnen een paragraaf! en is gecentreerd op de pagina.</strong><br>De lijn hieronder is 1000 pixels breed, 5 pixels hoog en is grijs.</p>
+		
+		<hr height="5" width="1000" color="grey">
+
+		<table id="main" border="2" width="1000" align="center">
+			<tr id="row1">
+				<td id="td0" height="100" colspan="3">Deze cel van de tabel overspant de drie originele. De tekst heeft een lijhoogte van 1,5 en staat niet in een paragraaf. Je ziet duidelijk het verschil met de tekst in de volgende cel (hieronder). Bovendien heeft alle tekst in deze rij een gele achtergrond omdat het de eerste kind van de tabel is. De cel binnen een rij die eerste kind van een tabel is, eeft een padding van 5px en lettertype Courier new.</td>
+			</tr>
+			<tr>
+				<td id="td1" width="10%" height="100"></td>
+				<td height="100" valign="bottom">De bloem in de cel links (bloem.png) werd geplaatst als achtergrondafbeelding. In de cel rechts staat dezelfde bloem, maar werkelijk geplaatst, gepositioneerd in de rechter-bovenhoek van de cel. De tekst in deze cel staat uitgelijk op de bodem van de cel, maar staat niet in een paragraaf.</td>
+				<td id="td2" width="10%" height="100"></td>
+			</tr>
+			<tr>
+				<td class="rowsp" width="10%" rowspan="2">Deze cel overspant net zoals die aan de overkant, twee rijen</td>
+				<td id="td3" height="100">De tekst in deze paragraaf heeft een eerste letter die groen is en de eerste tekstregel wordt rood met small-caps. Alle andere regels krijgen terug de basiskleur.Dit gebeurt allemaal via css, en werkt alleen als de paragraaf binnen een cel van een tabel staat. De tekst in deze cel staat bovenaan gepositioneerd, maar door de paragraaf valt dit niet op.</td>
+				<td class="rowsp" width="10%" rowspan="2">De opmaak van deze en die aan de andere kant is dezelfde en gebeurt via css Boord is 5 pixels, kleur is pink</td>
+			</tr>
+			<tr>
+				<td  height="100" valign="top"><span>Hier vind je tekst binnen een span. Tekstkleur is "darkgreen", vetgedrukt. Grootte is 90% en is uitgelijnd tegen de bovenzijde van de cel. De tekst begint op 10 pixels van de linkerzijde van de cel.</span></td>
+				<td height="100"></td>
+	
+			</tr>
+			<tr>
+				<td width="10%">Hiernaast nemen we cel 2 en 3 samen. er zit een geneste lijst &lt;ul&gt; in.</td>
+				<td height="100" colspan="2">
+				<ul>
+					<li>Zaklamp</li>
+					<li><a href="https://www.google.com/search?sxsrf=ACYBGNRTJQC-wUyZqZqzdFMmtXjTJWYITw%3A1573546648717&source=hp&ei=mGrKXamtKYmkwQLBkJ6oDA&q=batterijen&oq=batterijen&gs_l=psy-ab.3..0i131j0l9.10513.11634..11879...0.0..0.130.853.7j3......0....1..gws-wiz.......35i39.7rSJk8k48KI&ved=0ahUKEwip2aCInuTlAhUJUlAKHUGIB8UQ4dUDCAU&uact=5">Batterijen</a></li>
+						<ul>
+							<li id="li1">AA</li>
+							<li><a href="https://www.google.com/search?sxsrf=ACYBGNS0UXKFa5_NcIUlXGFhFQwdaOEDLQ%3A1573546716172&ei=3GrKXc2OCorHwAKk2pvwDA&q=9+volt+batterijen&oq=9+volt+batterijen&gs_l=psy-ab.3..35i39j0l3j0i30j0i5i30l4j0i8i30.1676.1676..2835...0.2..0.64.64.1......0....1..gws-wiz.......0i71.9Awu6aIfwok&ved=0ahUKEwjN7LeonuTlAhWKI1AKHSTtBs4Q4dUDCAo&uact=5">9 volt</a></li>
+						</ul>
+					<li>Jas</li>
+				</ul>
+				<p>De lijst heeft geen voorteken. Alleen de geneste listitems worden rood (door css pseudo-elementen of patroonvergelijking te gebruiken) Listitems Batterijen en 9 volt zijn linken. Een link binnen een ongeordende lijst is zwart en onderlijnd.</p>
+				</td>
+			</tr>
+			<tr>
+				<td width="10%" colspan="2">
+					<fieldset>
+						<legend>Formulier:</legend>
+						<table id="form" class="table2" border="1px" align="center" width="60%" >
+							<tr>
+								<td id="td4">
+									<table class="table2" border="1">
+										<tr>
+											<form>
+												Naam: <input type="text" size="30"><br>
+												Email: <input type="text" size="30"><br> 
+											</form>
+										</tr>
+									</table>
+									<table id="table3" class="table2" border="1" align="center">
+										<tr>
+											<td>
+												<input type="checkbox" name="Goed" checked="true">Goed<br>
+												<input type="checkbox" name="Matig">Matig<br>
+												<input type="checkbox" name="Slecht">Slecht
+											</td>
+											<td>
+												<input type="radio" name="geslacht">Man<br>
+												<input type="radio" name="geslacht">Vrouw
+											</td>
+										</tr>
+									</table>
+								</td>
+								<td>
+									<form>
+										<select valign="top">
+											<option>blauw</option>
+											<option>geel</option>
+											<option>groen</option>
+										</select><br><br><br><br>
+										<input type="button" value="Verzend"><br>
+										<input type="button" value="Alles wissen">
+									</form>
+								</td>
+							</tr>
+						</table>
+						<p>Geneste tabellen hebben (via css) een blauwe stippelboord van 2 pixels, de boord van de cellen van geneste tabellen zijn oranje, 1 pixel dik. De achtergrondkleur van de geneste tabellen is lightgreen. deze geneste tabel beslaat 60% van de breedte van de bovenliggende tabel.</p>
+				</td>
+				<td valign="center" height="200">In de cel links van mij komt een formulier. Cel 1 en 2 nemen we samen. In dit formulier zit een geneste tabel.</td>
+				
+			</tr>
+			
+		</table>
+	</body>
+</html>

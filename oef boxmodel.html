@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+background-color: #ADADD6;
+}
+
+.container {
+	background-color: #0033CC;
+	width: 790px;
+	padding-top: 1px;
+	margin: 0px auto;
+	padding-bottom: 5px;
+}
+
+.header {
+	background-color: green;
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 778px;
+	height: 150px;
+	border: 1px black solid;
+}
+
+.titel {
+	background-color: yellow;
+	width: 300px;
+}
+
+.nav_top {
+	background-color: yellow;
+	margin-top: 5px;
+	margin-left: 5px;
+	width: 778px;
+	border: 1px black solid;
+}
+
+.nav_top ul{
+margin: 0;
+padding: 0;
+overflow: hidden;
+margin-left: 18.5px;
+}
+
+.nav_top ul li {
+//border: 1px solid red;
+display: inline-block;
+width: 146px;
+text-align: center;
+float: left;
+border-right: 1px solid black;
+}
+
+.nav_top ul li:first-child {
+border-left: 1px solid black;
+}
+
+.nav_top ul li a {
+display: block;
+padding: 14px 16px;
+text-decoration: none;
+}
+
+.nav_top ul li a:hover {
+background-color: orange;
+}
+.navigate {
+	background-color: yellow;
+	float: left;
+	margin-left: 5px;
+	margin-top: 5px;
+	width: 124px;
+	border: 1px black solid;
+
+}
+
+.content {
+	background-color: white;
+	border: 1px black solid;
+	float: left;
+	width: 647px;
+	height: 350px;
+	margin-left: 5px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+
+}
+
+.footer {
+	background-color: red;
+	border: 1px black solid;
+	width: 778px;
+	clear: left;
+	margin-top: 5px;
+	margin-left: 5px;
+
+}
+
+ul {
+	list-style: none;
+	padding-left: 10px;
+	
+}
+</style>
+
+<script>
+
+function showAlert() {
+var lengte = 0;
+var breedte = 0;
+var opp = 0;
+lengte = prompt("hoeveel cm is de lengte? ");
+breedte = prompt("hoeveel cm is de breedte? ");
+opp = lengte * breedte;
+if (opp < 200) {
+alert("de oppervlakte is " + lengte*breedte + " cm² \n de prijs is €15 per cm² \n de prijs komt neer op " + opp * 15 + " euro");
+} else if (opp >= 200) {
+alert("de oppervlakte is " + lengte*breedte + " cm² \n de prijs is €10 per cm² \n de prijs komt neer op " + opp * 10 + " euro");
+}
+
+}
+
+</script>
+
+</head>
+<body>
+
+	Body
+	
+	<div class="container">
+		<div class="header">
+			<div class="titel">
+				Titel
+			</div>
+		</div>
+		<div class="nav_top">
+			<ul>
+				<li><a href="maandag.html">maandag</a></li>
+				<li><a href="dinsdag.html">dinsdag</a></li>
+				<li><a href="woensdag.html">woensdag</a></li>
+				<li><a href="donderdag.html">donderdag</a></li>
+				<li><a href="vrijdagdag.html">vrijdag</a></li>
+			</ul>
+		</div>
+		<div class="navigate">
+			<ul>
+				<li><a href="maandag.html">maandag</a></li>
+				<li><a href="dinsdag.html">dinsdag</a></li>
+				<li><a href="woensdag.html">woensdag</a></li>
+				<li><a href="donderdag.html">donderdag</a></li>
+				<li><a href="vrijdagdag.html">vrijdag</a></li>
+			</ul>
+		</div>
+		<div class="content">
+			Inhoud<br>
+			<button type="button" onClick="showAlert()">klik hier<br>
+		</div>
+		<div class="footer">
+			Onder
+		</div>
+	</div>
+
+</body>
+</html>

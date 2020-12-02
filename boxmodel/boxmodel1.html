@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+		
+		body {
+		background-color: black;
+		}
+		
+		ul {
+		padding-left: 0;
+		margin-left: 0;	
+		background-color: #660099;
+		width: 80px;
+		}
+
+		ul li {
+		display: block;
+		}
+
+		li ul {
+		color: white;
+		background-color: #660099;
+		padding: 5px;
+		display: none;
+		width: 70px;
+		}
+
+		li:hover ul {
+		position: absolute;
+		left: 88px;
+		top: 49px;
+		display: block;
+		width: 70px;
+		}
+	
+		li ul li {
+		font-size: 15px;
+		padding: 5px;
+		padding-left: 0px;
+		}
+
+		li a {
+		color: white;
+		padding: 5px;
+		text-decoration: none;
+		font-size: 20px;
+		display: block;
+		background-color: #660099;
+		width: 70px;
+		list-style: none;
+		}
+
+		li a:hover {
+		background-color: #CC00CC;
+		}
+
+		h1 {
+		font-size: 100px;
+		}
+
+		img {
+		float: center;
+		margin-right: 5px;
+		margin-bottom: 5px;
+		}
+
+		.images {
+		margin: 4em;
+		}
+	
+		</style>
+
+
+	</head>
+	<body>	
+		<ul>
+			<li><a href="#1">Optie 1</a></li>
+			<li><a href="#2">Optie 2</a>
+				<ul>
+					<li class="genest">Optie 2.1</li><br>
+					<li class="genest">Optie 2.2</li><br>
+					<li class="genest">Optie 2.3<br>
+				</ul></li>
+			<li><a href="#3">Optie 3</a></li>
+			<li><a href="#4">Optie 4</a></li>
+			<li><a href="#5">Optie 5</a></li>
+		</ul><br>
+		<div class="images">
+			<img src="images/bloem1.jpg" class="center">
+			<img src="images/bloem6.jpg" class="center">
+			<img src="images/bloem3.jpg" class="center">
+			<img src="images/bloem4.jpg" class="center">
+			<img src="images/bloem5.jpg" class="center">
+			<img src="images/bloem6.jpg" class="center">
+			<img src="images/bloem1.jpg" class="center">
+			<img src="images/bloem6.jpg" class="center">
+			<img src="images/bloem3.jpg" class="center">
+			<img src="images/bloem4.jpg" class="center">
+			<img src="images/bloem3.jpg" class="center">
+			<img src="images/bloem4.jpg" class="center">
+		</div>
+	</body>
+</html>

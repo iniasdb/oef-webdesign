@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Google</title>
+	<style>
+		body {
+			text-align: center;
+			font-family: arial;
+		}
+
+		.top-left ul li {
+			display: inline;
+			margin-right: 5px;
+		}
+
+		a {
+			text-decoration: none;
+			color: grey;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		.top-left ul {
+			margin-top: 0px;
+			float: right;
+			vertical-align: top;
+		}
+
+		.container {
+			margin: 0 auto;
+			//padding-top: 80px;
+			padding-top: 20px;
+			//width: 300px;
+			clear: both;
+		}
+
+		.logo {
+			margin: 0px auto;
+			width: 300px;
+			display: none;
+		}
+
+		.search {
+			margin: 0 auto;
+			width: 600px;
+			height: 50px;
+			border-radius: 20px;
+		}
+
+		.search:hover {
+			box-shadow: 1px 1px 1px 1px grey;
+		}
+
+		.taal {
+			color: blue;
+		}
+
+		.knop {
+			width: 130px;
+			height: 40px;
+			margin-right: 5px;
+			border-radius: 5px;
+		}
+
+		.knoppen {
+			margin: 0px 130px;
+		}
+
+		.footer {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			width: 100%;
+			background-color: #F2F2F2;
+			color: rgb(95, 99, 104);
+			text-align: left;
+		}
+
+		.f1 {
+			padding: 10px 0px 10px 30px;
+			font-size: 15px;
+		}
+
+		.f2 {
+			padding: 10px 0px 10px 30px;
+			font-size: 13px;
+		}
+
+		.f2 a {
+			margin-right: 25px;
+		}
+
+		hr {
+			margin: 0;
+			color: #E4E4E4;
+		}
+
+		p {
+			font-size: 65px;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="top-left">
+		<ul class="top-left">
+			<li><a href="gmail">Gmail</a></li>
+			<li><a href="pic">Afbeeldingen</a></li>
+			<li><a href="block"><img src="images/blok.png"></a></li>
+			<li><a href="acc"><img src="images/acc.png"></a></li>
+		</ul>
+	</div>
+
+	<div class="container">
+		<img class="logo" src="images/logo.png">
+		<p>
+			<span style="color:#EA4335">L</span>
+			<span style="color:#34A853">o</span>
+			<span style="color:#FBBC05">n</span>
+			<span style="color:#EA4335">g</span>
+			<span style="color:#4285F4">k</span>
+			<span style="color:#EA4335">a</span>
+			<span style="color:#FBBC05">n</span>
+			<span style="color:#4285F4">k</span>
+			<span style="color:#34A853">e</span>
+			<span style="color:#EA4335">r</span>
+		</p>
+	</div>
+
+	<div class="search">
+		<form action="http://google.com/search" target="_blank">
+			<input type="text" name="q" class="search"><br><br><br>
+			<div class="knoppen">
+				<input class="knop" type="submit" name="submit" value="Google zoeken">
+				<input class="knop" type="button" name="lucky" value="Ik doe een gok"
+					onclick="location.href = 'https://www.google.com/doodles/'"><br><br>
+			</div>
+		</form>
+		Google aangeboden in: <a class="taal" href="frans"> Français</a> <a class="taal" href="duits"> Deutsch</a> <a
+			class="taal" href="english"> English</a>
+	</div>
+
+	<div class="footer">
+		<div class="f1">
+			België
+		</div>
+		<hr>
+		<div class="f2">
+			<a href="adv">Adverteren</a> <a href="bedr">Bedrijf</a> <a href="over">Over</a> <a href="hoe">Hoe Google
+				Zoeken Werkt</a>
+		</div>
+	</div>
+
+</body>
+
+</html>

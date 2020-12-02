@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>kindergeld</title>
+	</head>
+	<body>
+		<script>
+			var kinderen = 0;
+			var salaris = 0;
+			var kindergeld = 0;
+			var toelage = 0;
+			var afname = 0;
+			var totaal = 0;
+			var extra = 0;
+			var min = 0;
+
+			var kinderen = prompt("hoeveel kinderen heeft u?");
+			var salaris = prompt("Wat is uw maandelijks salaris?");
+			
+			if (kinderen < 3) {
+				
+				if (salaris <= 500.00) {
+				kindergeld = kinderen * 25.00;
+				toelage = kindergeld / 100 * 25;
+				totaal = kindergeld + toelage;				
+
+				document.write("u krijgt " + totaal + " euro kindergeld.<br>");
+
+				if (totaal < kinderen * 25) {	
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;			
+				document.write("u krijgt " + extra + " euro extra, u krijgt dus " + totaal + extra + " euro<br>");
+				} else if (totaal > kinderen * 25) {
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;
+				document.write("u heeft " + extra + " euro extra gekregen dan het minimum<br>");
+				}
+
+				} else if (salaris > 2000.00) {
+				kindergeld = kinderen * 25.00;
+				afname = kindergeld / 100 * 45;
+				totaal = kindergeld - afname;
+				
+				document.write("u krijgt " + totaal + " euro kindergeld.<br>");
+
+				if (totaal < kinderen * 25) {	
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;			
+				document.write("u krijgt " + extra + " euro extra, u krijgt dus " + totaal + extra + " euro<br>");
+				} else if (totaal > kinderen * 25) {
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;
+				document.write("u heeft " + extra + " euro extra gekregen dan het minimum<br>");
+				}
+
+				} else {
+				kindergeld = kinderen * 25.00;
+				document.write("u krijgt " + kindergeld + " euro kindergeld.<br>");
+
+				if (totaal < kinderen * 25) {	
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;			
+				document.write("u krijgt " + extra + " euro extra, u krijgt dus " + totaal + extra + " euro<br>");
+				} else if (totaal > kinderen * 25) {
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;
+				document.write("u heeft " + extra + " euro extra gekregen dan het minimum<br>");
+				}
+
+				}
+
+			} else if (kinderen >= 3 && kinderen < 5) {
+
+				if (salaris <= 500.00) {
+				kindergeld = kinderen * 12.50;
+				toelage = kindergeld / 100 * 25;
+				totaal = kindergeld + toelage;				
+
+				document.write("u krijgt " + totaal + " euro kindergeld.<br>");
+
+				if (totaal < kinderen * 25) {	
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;			
+				document.write("u krijgt " + extra + " euro extra, u krijgt dus " + totaal + extra + " euro<br>");
+				} else if (totaal > kinderen * 25) {
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;
+				document.write("u heeft " + extra + " euro extra gekregen dan het minimum<br>");
+				}
+
+				} else if (salaris > 2000.00) {
+				kindergeld = kinderen * 12.50;
+				afname = kindergeld / 100 * 45;
+				totaal = kindergeld - afname;
+				
+				document.write("u krijgt " + totaal + " euro kindergeld.<br>");
+
+				if (totaal < kinderen * 25) {	
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;			
+				document.write("u krijgt " + extra + " euro extra, u krijgt dus " + totaal + extra + " euro<br>");
+				} else if (totaal > kinderen * 25) {
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;
+				document.write("u heeft " + extra + " euro extra gekregen dan het minimum<br>");
+				}
+
+				} else {
+				kindergeld = kinderen * 12.50;
+				document.write("u krijgt " + kindergeld + " euro kindergeld.<br>");
+
+				if (totaal < kinderen * 25) {	
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;			
+				document.write("u krijgt " + extra + " euro extra, u krijgt dus " + totaal + extra + " euro<br>");
+				} else if (totaal > kinderen * 25) {
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;
+				document.write("u heeft " + extra + " euro extra gekregen dan het minimum<br>");
+				}
+
+				}
+	
+			} else if (kinderen >= 5) {
+
+				if (salaris <= 500.00) {
+				kindergeld = kinderen * 7.50;
+				toelage = kindergeld / 100 * 25;
+				totaal = kindergeld + toelage;				
+
+				document.write("u krijgt " + totaal + " euro kindergeld.<br>");
+
+				if (totaal < kinderen * 25) {	
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;			
+				document.write("u krijgt " + extra + " euro extra, u krijgt dus " + totaal + extra + " euro<br>");
+				} else if (totaal > kinderen * 25) {
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;
+				document.write("u heeft " + extra + " euro extra gekregen dan het minimum<br>");
+				}
+
+				} else if (salaris > 2000.00) {
+				kindergeld = kinderen * 7.50;
+				afname = kindergeld / 100 * 45;
+				totaal = kindergeld - afname;
+				
+				document.write("u krijgt " + totaal + " euro kindergeld.<br>");
+
+				if (totaal < kinderen * 25) {	
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;			
+				document.write("u krijgt " + extra + " euro extra, u krijgt dus " + totaal + extra + " euro<br>");
+				} else if (totaal > kinderen * 25) {
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;
+				document.write("u heeft " + extra + " euro extra gekregen dan het minimum<br>");
+				}
+
+				} else {
+				kindergeld = kinderen * 7.50;
+				document.write("u krijgt " + kindergeld + " euro kindergeld.<br>");				
+				if (totaal < kinderen * 25) {	
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;			
+				document.write("u krijgt " + extra + " euro extra, u krijgt dus " + totaal + extra + " euro<br>");
+				} else if (totaal > kinderen * 25) {
+				document.write("het minimum bedrag voor " + kinderen + " kinderen is " + kinderen * 25 + " euro<br>");
+				min = kinderen * 25
+				extra = totaal - min;
+				document.write("u heeft " + extra + " euro extra gekregen dan het minimum<br>");
+				}
+
+				}
+			} else {
+			document.write("error");
+			}
+
+						
+		</script>
+		
+	</body>
+</html>

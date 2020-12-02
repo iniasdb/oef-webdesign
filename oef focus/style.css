@@ -1,0 +1,14 @@
+* {
+background-color: black;
+color: white;
+}
+
+input:focus {
+background-color: green;
+}
+
+th {
+text-align: left;
+}
+
+
